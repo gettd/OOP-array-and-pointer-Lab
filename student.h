@@ -17,13 +17,14 @@ class student{
         void set_age(int);
         int get_age(){ return age;}
        void set_all(string,int,float=0);
+        float get_score(){return score;}
        void print_all();
        
 };
 void student::set_all(string n,int a,float s){
   name=n;
   age=a;
-  score=s;
+  score=s; //s will be 0 if no input provided (declared in public class above)
 }
 void student::print_all(){
  		cout<<"---Name:"<<name<<"---"<<endl;
